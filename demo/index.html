@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Month Picker</title>
+    <script src="assets/jquery.js"></script>
+    <script src="assets/jquery-ui.js"></script>
+    <script src="../dist/multi-month-picker.min.js"></script>
+    <link rel="stylesheet" href="../dist/multi-month-picker.min.css">
+</head>
+<body>
+    <input type="text" id="exampleInput">
+    
+    <script>
+        // Initialize the plugin
+        $(document).ready(function() {
+            $('#exampleInput').multiMonthPicker({
+                monthFormat: 'yyyy-mm',
+                value: ['2023-10','2023-11']
+            });
+        });
+    </script>
+</body>
+</html>
